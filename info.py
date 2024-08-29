@@ -79,7 +79,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Films_4u') # Support Chat Link Witho
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', False))
 PM_SEARCH = bool(environ.get('PM_SEARCH', True))
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
@@ -106,7 +106,7 @@ VERIFY_SND_SHORTLINK_API = environ.get('VERIFY_SND_SHORTLINK_API', 'd15e936ee756
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/FF_Help/107')
 
 # Shortlink Info
-SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', False))
+SHORTLINK_MODE = bool(environ.get('SHORTLINK_MODE', True))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'publicearn.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'd15e936ee75670748567d2176253d8cf8823b20e')
 
@@ -143,7 +143,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "")
+URL = environ.get("URL", "https://testofvjfilter-1fa60b1b8498.herokuapp.com/")
 
 
 # Rename Info : If True Then Bot Rename File Else Not
